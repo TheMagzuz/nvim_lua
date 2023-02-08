@@ -11,3 +11,6 @@ vim.keymap.set("i", "<leader>ae", "æ")
 vim.keymap.set("i", "<leader>aa", "å")
 
 vim.keymap.set("n", "<leader>n", function() vim.cmd("noh") end)
+
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")

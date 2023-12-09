@@ -7,7 +7,7 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'dracula/vim'
@@ -39,10 +39,12 @@ return require('packer').startup(function(use)
       -- Snippets
       {'L3MON4D3/LuaSnip'},
       {'rafamadriz/friendly-snippets'},
-    }
+    },
+    branch = "v3.x"
   }
   use 'SirVer/ultisnips'
   -- maybe use nvim-dap for debugging?
+  use 'mfussenegger/nvim-dap'
   use 'lervag/vimtex'
   use {'ThePrimeagen/harpoon',
     requires = {{'nvim-lua/plenary.nvim'}}
@@ -58,5 +60,13 @@ return require('packer').startup(function(use)
     }
   end
 }
-
+  use 'mattn/emmet-vim'
+  use 'mhartington/formatter.nvim'
+  use 'ggandor/leap.nvim'
+  use 'iamcco/markdown-preview.nvim'
+  use 'preservim/nerdtree'
+  use 'Xuyuanp/nerdtree-git-plugin'
+  use 'ryanoasis/vim-devicons'
+  -- nvim lua lsp
+  use "folke/neodev.nvim"
 end)

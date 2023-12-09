@@ -19,5 +19,5 @@ ls.add_snippets("tex", {
   ]], i(1))
   ),
   s({trig = "\\bf", snippetType = "autosnippet"}, fmta("\\textbf{<>}", i(1))),
-  s({trig = "\\it", snippetType = "autosnippet"}, fmta("\\textit{<>}", i(1))),
+  -- s({trig = "\\it", snippetType = "autosnippet"}, fmta("\\textit{<>}", i(1))),
 })
